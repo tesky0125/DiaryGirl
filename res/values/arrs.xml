@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries_list_bg_pref">
+        <item>背景一</item>
+        <item>背景二</item>
+        <item>更多..</item>  
+    </string-array>
+     <string-array name="entries_list_font_size_pref">
+        <item>14sp</item>
+        <item>16sp</item>
+        <item>18sp</item>
+        <item>更多..</item>  
+    </string-array>
+     <string-array name="entries_list_font_color_pref">
+        <item>方案一</item>
+        <item>方案二</item>
+        <item>更多..</item>  
+    </string-array>       
+    
+    
+</resources>

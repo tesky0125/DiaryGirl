@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="yan.girl.activity"
+      android:versionCode="2"
+      android:versionName="2.0">
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application android:icon="@drawable/app_icon_diarygirl" android:label="@string/app_name">
+        <activity android:name="yan.girl.activity.DiaryTabHost"
+       			  android:label="@string/app_name">
+              <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> 
+        </activity>  
+         
+        <activity android:name="yan.girl.activity.DBTestAct">
+     
+        </activity>
+        
+        <activity android:name="yan.girl.activity.DiaryListAct">
+        </activity>
+
+        <activity android:name="yan.girl.activity.Mp3ListAct">
+        </activity>
+
+        <activity android:name="yan.girl.activity.GalleryShowAct">
+        </activity>                
+        
+        <activity android:name="yan.girl.activity.DiaryDetailAct">
+        </activity>    
+        <activity android:name="yan.girl.activity.ImageShowAct">
+        </activity>
+                    
+        <activity android:name="yan.girl.activity.DiaryNewEditAct"
+        			android:windowSoftInputMode="adjustPan"
+        			>
+        </activity>  
+        
+        <activity android:name="yan.girl.activity.ConfigureAct">
+        </activity> 
+        
+		<activity android:name="yan.girl.activity.FileScanAct">
+        </activity>
+        
+		<activity android:name="yan.girl.activity.Mp3PlayerAct">
+        </activity>        
+		
+		<service android:name="yan.girl.services.Mp3PlayerService"></service>
+		
+		<activity android:name="yan.girl.activity.DiaryHandleAct" 
+			android:theme="@android:style/Theme.Dialog"></activity>        
+		<activity android:name="yan.girl.activity.MusicHandleAct" 
+			android:theme="@android:style/Theme.Dialog"></activity>
+			
+		<activity android:name="yan.girl.activity.GridViewShowAct">
+
+		</activity> 
+
+		<activity android:name="yan.girl.activity.PhotoViewerAct">
+
+		</activity>
+					
+    </application>
+    
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+</manifest>

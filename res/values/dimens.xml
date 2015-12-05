@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="tab_font_size">12dp</dimen>
+	<dimen name="tab_padding_up">5dp</dimen>
+	<dimen name="tab_padding_drawable">8dp</dimen>
+	
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/bg_body_style"
+    >
+    <Button android:visibility="visible" android:layout_height="wrap_content" android:text="Insert.Helper" android:layout_width="fill_parent" android:id="@+id/insert"></Button>
+    <Button android:layout_height="wrap_content" android:text="Abstract Data from Helper" android:layout_width="fill_parent" android:id="@+id/query"></Button>
+    <Button android:visibility="visible" android:text="Create SD Database" android:id="@+id/create_sd_db" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+    <Button android:visibility="visible" android:text="Insert.SD" android:id="@+id/insert_sd" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+    <Button android:visibility="visible" android:text="Query.SD" android:id="@+id/query_sd" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+    <Button android:visibility="visible" android:text="Transfer Data to SD Card" android:id="@+id/trans" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+    <Button android:visibility="visible"  android:text="Helper Drop Table and Database" android:id="@+id/drop_table" android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+    <Button android:layout_height="wrap_content" android:text="Update SD Table" android:id="@+id/update_sd_table" android:layout_width="fill_parent"></Button>
+</LinearLayout>

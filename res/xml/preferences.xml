@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="parent_screen_diary_pref">
+
+    <PreferenceCategory
+            android:title="外观设置">
+            <ListPreference
+                android:key="list_bg_pref"
+                android:title="背景设置"
+                android:summary="设置应用程序的背景图片及子界面背景"
+                android:entries="@array/entries_list_bg_pref"
+                android:entryValues="@array/entries_list_bg_pref"
+                android:dialogTitle="请选择" />
+        <!--<CheckBoxPreference
+                android:key="checkbox_preference"
+                android:title="@string/title_toggle_preference"
+                android:summary="@string/summary_toggle_preference" />-->
+            
+    </PreferenceCategory>
+                
+    <PreferenceCategory
+            android:title="字体设置">
+
+        <!--<EditTextPreference
+                android:key="edittext_preference"
+                android:title="@string/title_edittext_preference"
+                android:summary="@string/summary_edittext_preference"
+                android:dialogTitle="@string/dialog_title_edittext_preference" />-->
+                
+        <ListPreference
+                android:key="list_font_size_pref"
+                android:title="字体大小设置"
+                android:summary="对应用程序中字体大小进行设置"
+                android:entries="@array/entries_list_font_size_pref"
+                android:entryValues="@array/entries_list_font_size_pref"
+                android:dialogTitle="请选择" />
+                
+        <ListPreference
+                android:key="list_font_color_pref"
+                android:title="字体颜色设置"
+                android:summary="对应用程序中字体颜色进行设置"
+                android:entries="@array/entries_list_font_color_pref"
+                android:entryValues="@array/entries_list_font_color_pref"
+                android:dialogTitle="请选择" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="日记本设置">
+    
+        <CheckBoxPreference
+                android:key="parent_checkbox_diary_pref"
+                android:title="日记本样式设置"
+                android:summary="对日记本中细节进行设置" 
+                />
+                            
+        <PreferenceScreen
+                android:key="child_screen_diary_pref"
+                android:title="跳转"
+                android:summary="进入日记本设置界面"
+                android:dependency="parent_checkbox_diary_pref"
+                android:layout="?android:attr/preferenceLayoutChild">
+            
+            <!-- You can place more preferences here that will be shown on the next screen. -->
+                     
+            <CheckBoxPreference
+                    android:key="next_screen_checkbox_preference1"
+                    android:title="细节一"
+                    android:summary="细节一设置" />
+            <CheckBoxPreference
+                    android:key="next_screen_checkbox_preference2"
+                    android:title="细节二"
+                    android:summary="细节二设置" />
+                
+        </PreferenceScreen>
+
+
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+            android:title="其他设置">
+    
+        <CheckBoxPreference
+                android:key="parent_checkbox_preference"
+                android:title="其他设置"
+                android:summary="其他设置" />
+
+        <!-- The visual style of a child is defined by this styled theme attribute. -->
+        <CheckBoxPreference
+                android:key="child_checkbox_preference"
+                android:dependency="parent_checkbox_preference"
+                android:layout="?android:attr/preferenceLayoutChild"
+                android:title="升级数据库"
+                android:summary="升级数据库" />
+            
+    </PreferenceCategory>
+    
+</PreferenceScreen>

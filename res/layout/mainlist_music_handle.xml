@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 需要实现对listitem进行操作，使用Activity的Dialog模式，这个xml就是Acitivty的layout
+	 不过后来不采用该模式对listitem进行操作，采用contextmenu或者直接用Dialog -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <ListView 
+    	android:id="@+id/handle_list" 
+    	android:layout_height="fill_parent" 
+    	android:layout_width="fill_parent"
+    	></ListView>
+
+</LinearLayout>

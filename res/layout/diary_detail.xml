@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:padding="10px"
+    style="@style/bg_body_style">
+
+    <LinearLayout 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="fill_parent"
+    	android:orientation="horizontal"
+    	android:background="@drawable/textview_selector"
+    	>
+        <ImageView 
+        	android:layout_height="25px" 
+        	android:id="@+id/logo_img" 
+        	android:layout_width="25px" 
+        	android:src="@drawable/list_item_diary" 
+        	android:layout_marginLeft="10px"
+        	android:layout_marginTop="10px"
+        	android:layout_weight="1"
+        	></ImageView>       
+        <TextView 
+        	android:text="TextView" 
+        	android:singleLine="true"
+        	android:id="@+id/disp_title" 
+        	style="@style/title_style"        
+        	android:layout_width="fill_parent" 
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10px"
+			android:layout_marginRight="30px"
+			android:gravity="center"
+			android:layout_weight="10"
+        	></TextView>   	    
+    </LinearLayout>
+     	
+    <!-- 使文本域滚动有两种方式，一种是使用 ScrollView，另一种是使用android:scrollbars属性-->
+    <!-- 这里要使下面的时间显示在右下角，必须设置android:layout_weight属性 -->
+	<ScrollView android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10px"	
+                android:layout_weight="1"
+                android:scrollbars="none"
+                android:background="@drawable/textview_selector"
+                >   
+    <RelativeLayout 
+    	android:layout_height="fill_parent" 
+    	android:layout_width="fill_parent"
+    	android:layout_marginTop="10px"
+    	>  
+	        <TextView 
+	        	android:text="content"
+	        	android:id="@+id/disp_content" 
+	        	style="@style/content_style"
+	        	android:layout_width="fill_parent" 
+	        	android:layout_height="wrap_content"	        	
+	        	android:singleLine="false"	        	
+	        	android:padding="3px"
+       		 	android:layout_alignParentTop="true"	        	 
+	        	></TextView>
+	    <!--	android:lines="8"
+				android:scrollbars="vertical"
+				android:scrollbarStyle="outsideInset"	  -->       		   
+	        		     
+	       <ImageView 
+	        	android:layout_height="wrap_content" 
+	        	android:layout_width="wrap_content" 
+	        	android:src="@drawable/list_item_diary" 
+	        	android:id="@+id/disp_image"        	
+	        	android:background="@drawable/imageview_selector"
+	        	android:layout_below="@+id/disp_content"
+	        	android:layout_alignParentBottom="true"
+	        	android:layout_centerHorizontal="true"
+	        	></ImageView>
+
+	    </RelativeLayout>	
+	 	</ScrollView>	    
+    <TextView 
+    	android:layout_gravity="right|bottom" 
+    	android:layout_marginRight="20px"
+    	android:text="time" 
+    	android:singleLine="true"
+    	android:id="@+id/disp_time" 
+    	style="@style/time_style"
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="5px"
+		android:layout_marginBottom="5px"
+    	></TextView>
+
+</LinearLayout>
+

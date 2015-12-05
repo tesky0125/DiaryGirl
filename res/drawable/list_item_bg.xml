@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Listview item Background -->
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<!--  使操作时透明-->
+<!--     <item android:state_selected="true" android:drawable="@android:color/transparent" /> -->
+	<item android:state_selected="true" android:drawable="@drawable/selector_the_apple" />
+    <item android:state_focused="true" android:drawable="@drawable/selector_the_apple" />
+    <item android:state_pressed="true" android:drawable="@drawable/selector_the_apple" />	    
+      
+ <!-- 稍微存在不妥之处。-->
+<!-- 	<item android:state_selected="true" android:drawable="@drawable/list_item_selected" /> 
+    <item android:state_pressed="true" android:drawable="@drawable/list_item_pressed" />	
+	<item android:state_focused="true" android:drawable="@drawable/list_item_selected"></item>	 
+	-->
+	 <!-- 在listview中默认时只有pressed状态和focused状态，没有选中时的状态，
+	 	即当触控选中一项时，pressing时可以有pressed状态，但当手指移开时，不会出现selected状态，
+	 	而是还原为默认状态，所以上面只能通过在adapter中设置其item的View来实现改变选中项的背景 ，
+	 	不过只适合在页面不跳转的情况下，因为跳转的话设置也没有意义，除非像修改日记后返回时仍然指向
+	 	那个被修改的日记。getAdapter.setFocus这种形式来实现，为返回的View设置background-->
+</selector>

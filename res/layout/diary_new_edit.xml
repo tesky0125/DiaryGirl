@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10px"
+    style="@style/bg_body_style">
+    <TextView 
+		android:text="主题" 
+		android:id="@+id/titleView1" 
+		style="@style/list_item_top_style"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		></TextView>
+    <EditText 
+		android:layout_height="wrap_content" 
+		android:id="@+id/newedittitle" 
+		android:layout_width="fill_parent" 
+		android:text=""
+		android:hint=""
+		></EditText>
+    <TextView 
+		android:text="内容" 
+		android:id="@+id/contentView2" 
+		style="@style/list_item_top_style"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		></TextView>
+    <EditText 
+ 	   android:lines="12" 
+    	android:gravity="top"
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/newcontent" 
+    	android:layout_width="fill_parent"
+    	 android:text=""
+    	 android:hint=""
+    	 ></EditText>
+
+		
+</LinearLayout>

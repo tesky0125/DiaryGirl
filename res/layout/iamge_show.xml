@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/bg_body_style">
+    <ImageView 
+    	android:id="@+id/disp_image" 
+    	android:layout_height="fill_parent" 
+    	android:layout_width="fill_parent" 
+    	android:src="@drawable/list_item_diary" 
+		android:layout_gravity="center_horizontal|center_vertical"
+
+    	></ImageView>    
+</LinearLayout>

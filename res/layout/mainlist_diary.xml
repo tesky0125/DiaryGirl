@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/bg_body_style"
+	>
+    <ListView 
+        android:id="@+id/diarylist" 
+    	android:layout_height="fill_parent" 
+    	android:layout_width="fill_parent"
+    	style="@style/list_item_background"
+    	
+    	
+    	></ListView>
+    	
+    	<!-- android:layoutAnimation="@anim/list_anim_layout" -->
+    	
+    	<!-- 
+    	
+    	1、ListView在拖动的时候背景图片消失变成黑色背景。等到拖动完毕我们自己的背景图片才显示出来。
+			解决办法：给ListView加上android:scrollingCache=”false”属性			
+			 		
+		2、ListView的上边和下边有黑色的阴影。	但增加该属性后，就不会响应‘鼠标’操作了，只能通过手指滑动来实现滚屏。	
+			解决办法：给ListView加上android:fadingEdge=”none”属性			
+			 		
+		3、ListView的每一项之间需要设置一个图片做为间隔。		
+			解决办法：android:divider="@drawable/png"  其中  @drawable/png 是一个图片资源   	    	
+		
+    	android:cacheColorHint="#00000000": 设置Item透明,以使用父layout的背景
+    	android:divider="#00000000": Item之间无间隙 
+    	
+    	-->
+
+</LinearLayout>

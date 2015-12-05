@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent" 
+    style="@style/bg_body_style" 
+    android:weightSum="1">  
+	<GridView 
+		android:id="@+id/gridview"   
+		android:layout_height="fill_parent" 
+		android:layout_width="fill_parent"		
+		android:background="#00000000" 		
+		android:numColumns="4" 
+				
+		></GridView>  
+		<!-- android:layoutAnimation="@anim/list_anim_layout" -->
+</LinearLayout>  

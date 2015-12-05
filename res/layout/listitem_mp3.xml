@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="horizontal"
+    android:padding="4px"
+
+	>
+     <ImageView 
+    	android:layout_height="40px" 
+    	android:id="@+id/music_image" 
+    	android:layout_width="40px" 
+    	android:src="@drawable/list_item_music"
+    	android:layout_margin="4px"
+		android:paddingTop="5px"
+    	></ImageView> 
+    <LinearLayout 
+    	android:layout_height="wrap_content" 
+    	android:layout_width="fill_parent"
+    	android:orientation="vertical">
+	     <LinearLayout 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_width="wrap_content"
+	    	android:orientation="horizontal"
+	    	android:paddingTop="5px">   	
+	        <TextView 
+	        	android:text="TextView" 
+
+	        	style="@style/list_item_top_style"
+
+	        	android:id="@+id/music_name" 
+	        	android:layout_width="fill_parent" 
+	        	android:layout_height="wrap_content"
+	        	></TextView>
+ 	        <TextView 
+	        	android:text="TextView" 
+	        	android:id="@+id/music_hintpath" 
+	        	android:layout_height="wrap_content"
+	        	android:layout_width="wrap_content"
+	        	android:visibility="gone" 
+				
+	        	android:layout_gravity="right"></TextView>	         	
+	    </LinearLayout>        	
+	    <!-- 在设置UI时，最好考虑到移植性 -->
+        <TextView 
+        	android:text="TextView" 
+
+        	style="@style/list_item_bottom_style"
+
+        	android:id="@+id/music_size" 
+        	android:singleLine="true"
+        	android:paddingRight="20px"
+        	android:layout_gravity="right"
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	></TextView>
+    </LinearLayout>
+    
+</LinearLayout>
